@@ -3,17 +3,12 @@ package com.baobaotao.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import javax.servlet.annotation.WebFilter;
-import javax.servlet.annotation.WebListener;
-import javax.servlet.annotation.WebServlet;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
 import com.baobaotao.domain.User;
-import com.sun.org.apache.regexp.internal.recompile;
 
 @Repository // 通过注解定义一个dao
 public class UserDao {

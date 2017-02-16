@@ -38,4 +38,9 @@ public class LoginController {
 			return new ModelAndView("main");
 		}
 	}
+
+	@RequestMapping(value = "/resource.html")
+	public ModelAndView resource() {
+		return new ModelAndView("resource");
+	}
 }
