@@ -29,16 +29,9 @@ public class MyInstantiationAwareBeanPostProcessor extends InstantiationAwareBea
 	public PropertyValues postProcessPropertyValues(PropertyValues pvs, PropertyDescriptor[] pds, Object bean,
 			String beanName) throws BeansException {
 		if ("car".equals(beanName)) {
+			System.out.println("在设置某个属性时调用");
 			System.out.println("InstantiationAwareBeanPostProcessor.postProcessPropertyValues");
 		}
 		return pvs;
-	}
-
-	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-		return bean;
-	}
-
-	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-		return bean;
 	}
 }

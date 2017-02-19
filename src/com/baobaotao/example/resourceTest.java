@@ -16,10 +16,13 @@ public class resourceTest {
 	public void classPathResourceTest() throws IOException {
 		// String filePath = "/Users/oukyoku/Desktop/test.txt";
 
-		Resource res1 = new ClassPathResource("/WEB-INF/resource/test.txt");
+		// Resource res1 = new ClassPathResource("/WEB-INF/resource/test.txt");
+		//
+		// InputStream ins1 = res1.getInputStream();
+		// System.out.println("res1: " + res1.getFilename());
 
-		InputStream ins1 = res1.getInputStream();
-		System.out.println("res1: " + res1.getFilename());
+		// bean的生命周期
+		BeanLifeCycle.LifeCycleInBeanFactory();
 	}
 
 	@RequestMapping("/FileSystemResource.html")
