@@ -22,7 +22,7 @@ public class resourceTest {
 		// System.out.println("res1: " + res1.getFilename());
 
 		// bean的生命周期
-		BeanLifeCycle.LifeCycleInBeanFactory();
+		// BeanLifeCycle.LifeCycleInBeanFactory();
 	}
 
 	@RequestMapping("/FileSystemResource.html")
